@@ -16,7 +16,7 @@ cur_path = sys.argv[1]
 encode_type  = sys.argv[2]
 colunm_type  = sys.argv[3] 
 cursor = connect_hive('192.168.23.223')
-table_name = os.path.split(file_path)[1][:-4]
+table_name = os.path.split(cur_path)[1][:-4]
 file_path = os.path.join(os.getcwd(), cur_path)
 
 if colunm_type == '0': 
